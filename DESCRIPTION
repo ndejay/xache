@@ -1,0 +1,10 @@
+Package: xache
+Title: Store intermediate results on disk
+Version: 0.0.0.9000
+Authors@R: person("Nicolas", "De Jay", email = "nicolas.dejay@mail.mcgill.ca", role = c("aut", "cre"))
+Description: Load results from .RData if possible, otherwise generate results and store in .RData for the future.
+Depends: R (>= 3.0)
+License: MIT
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 5.0.1.9000
