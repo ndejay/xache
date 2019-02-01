@@ -5,7 +5,7 @@ If you're like me, you probably find yourself writing some variation of the
 following routine in order to avoid unnecessarily performing heavy
 computations multiple times, across instances of R:
 
-```{r}
+``` r
 init <- function () {
   # do some calculation
   2 * 2 # dummy result
@@ -25,7 +25,7 @@ if (!exists("test")) { # Do nothing if variable exists in environment
 I wrote the `xache` function to be able to simplify this process to the
 following bit of code:
 
-```{r}
+``` r
 xache("test", "test.RData", init)
 
 xache("test", "test.RData", function () {
@@ -47,7 +47,7 @@ xache("test", "test.RData", function () {
 Installation
 ------------
 
-```{r}
+``` r
 install.packages("devtools")
 library("devtools")
 devtools::install_github("ndejay/xache")
